@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" text="Analyze Data" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="analyze.AnalyzeController">
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <bottom>
+         <TextArea fx:id="logBox" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+      </bottom>
+      <center>
+         <Button fx:id="buttonFilter" mnemonicParsing="false" onAction="#filterData" text="Filter Data"
+                 BorderPane.alignment="CENTER"/>
+      </center>
+      <top>
+         <Button fx:id="buttonFileSelector" mnemonicParsing="false" onAction="#showFileChooser" text="Select File"
+                 BorderPane.alignment="CENTER"/>
+      </top>
+   </BorderPane>
+</TitledPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Sort Data" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parse.ParseController">
+   <content>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <bottom>
+            <TextArea fx:id="logBox" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <Button fx:id="buttonFilter" mnemonicParsing="false" onAction="#filterData" text="Filter Data" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Button fx:id="buttonFileSelector" mnemonicParsing="false" onAction="#showFileChooser" text="Select File" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </content>
+</TitledPane>

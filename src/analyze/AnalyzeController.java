@@ -1,11 +1,11 @@
 package analyze;
 
+import analyze.functions.Sorter;
 import analyze.functions.varExtractor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import analyze.functions.Sorter;
 
 
 
@@ -22,6 +22,9 @@ public class AnalyzeController {
     //Initialize varExtractor
     private final varExtractor varExtractor = new varExtractor();
 
+    //Initialize Exporter Hi VCS
+    private final Exporter exporter = new Exporter(varExtractor);
+
 
     @FXML
     private TextArea logBox;
@@ -30,15 +33,26 @@ public class AnalyzeController {
     private Button buttonFilter;
 
     @FXML
+    private Button buttonExport;
+
+    @FXML
     private Button buttonFileSelector;
 
     @FXML
     void filterData(ActionEvent event) {
         System.out.println("Data Filter Triggered");
         //varExtractor.getDuration();
-        //varExtractor.getSeek();
-        varExtractor.getLatency(false);
+        //varExtractor.getSeek();;
     }
+
+    @FXML
+    void exportData(ActionEvent event) {
+        //ExportData
+        exporter.csvExport();
+        System.out.println(varExtractor.getKey().size());
+
+    }
+
 
     @FXML
     void showFileChooser(ActionEvent event) {

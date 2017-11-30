@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.BorderPane?>
-<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="600.0" text="Analyze Data" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="analyze.AnalyzeController">
-   <BorderPane prefHeight="200.0" prefWidth="200.0">
-      <bottom>
-         <TextArea fx:id="logBox" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
-      </bottom>
-      <center>
-         <Button fx:id="buttonFilter" mnemonicParsing="false" onAction="#filterData" text="Filter Data"
-                 BorderPane.alignment="CENTER"/>
-      </center>
-      <top>
-         <Button fx:id="buttonFileSelector" mnemonicParsing="false" onAction="#showFileChooser" text="Select File"
-                 BorderPane.alignment="CENTER"/>
-      </top>
-   </BorderPane>
+
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Analyze Data" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="analyze.AnalyzeController">
+   <content>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <bottom>
+            <TextArea fx:id="logBox" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="buttonFilter" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#filterData" text="Filter Data" BorderPane.alignment="CENTER" />
+                  <Button fx:id="buttonExport" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exportData" text="Export Data" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <Button fx:id="buttonFileSelector" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showFileChooser" text="Select File" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </content>
 </TitledPane>

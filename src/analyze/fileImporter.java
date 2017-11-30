@@ -52,11 +52,11 @@ class fileImporter {
             }
         }
         //Consolidate ArrayLists into Single ArrayList
-        ArrayList[] collumns = new ArrayList[3];
-        collumns[0] = key;
-        collumns[1] = action;
-        collumns[2] = time;
-        return collumns;
+        ArrayList[] columns = new ArrayList[3];
+        columns[0] = key;
+        columns[1] = action;
+        columns[2] = time;
+        return columns;
 
 
     }

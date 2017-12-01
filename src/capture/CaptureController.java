@@ -14,7 +14,7 @@ import java.io.PrintStream;
 public class CaptureController {
 
     //Define Output as TextFile
-    private final PrintStream o = new PrintStream(new File("AAT7.csv"));
+    private final PrintStream o = new PrintStream(new File("AHT7.csv"));
     private final PrintStream console = System.out;
 
 

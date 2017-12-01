@@ -22,8 +22,8 @@ public class AnalyzeController {
     //Initialize varExtractor
     private final varExtractor varExtractor = new varExtractor();
 
-    //Initialize Exporter Hi VCS
-    private final Exporter exporter = new Exporter(varExtractor);
+    //Initialize fileExporter Hi VCS
+    private final fileExporter exporter = new fileExporter(varExtractor);
 
 
     @FXML

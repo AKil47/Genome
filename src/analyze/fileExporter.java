@@ -3,14 +3,14 @@ package analyze;
 
 import analyze.functions.varExtractor;
 
-class Exporter {
+class fileExporter {
     //New varExtractor Object(Needs to be constructed)
     private varExtractor varExtractor = new varExtractor();
 
     //Import ArrayLists
 
 //Constructor
-    public Exporter(analyze.functions.varExtractor varExtractor) {
+    public fileExporter(analyze.functions.varExtractor varExtractor) {
         this.varExtractor = varExtractor;
     }
 

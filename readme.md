@@ -42,10 +42,12 @@ This will execute the programs main function which will render the JavaFX Stage 
 The program is structured with a variety of different objects and packages for ease of understanding. These objects are detailed below:
 
 ### The `Capture` Package
+------
 The capture package contains the `capture.fxml` and `CaptureController.java` files
 These files simply outline the UI and the event handlers that actually capture the typing data. The data is automatically appended to an auto-generated csv file.
 
 ### The `Analyze` Package
+------
 This package contains a large amount of classes that are used to sort and extract data points from the data captured from the `Capture` Package. 
 
 The UI is defined by an `analyze.fxml` and an `Analyze Controller.java`. The controller simply initializes the other `Analyze` objects and creates event handlers.

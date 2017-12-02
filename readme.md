@@ -1,12 +1,12 @@
 # Project Genome
-==============
+
 ----------
 
 
 Project Genome is a simple Keystroke Biometrics Capture Software. It captures the exact time when a key on the keyboard is pushed up or down and uses that data to derive variables such as Duration, Seek, and Latency.
 
 ## What is Keystroke Biometrics
--------
+
 
 
 
@@ -31,9 +31,6 @@ Essentially, this project is a part of an experiment to see if one's typing habi
 
 
 
-----------
-
-
 The Java Program follows can be executed from source by running
 
     javac Main.java
@@ -41,7 +38,7 @@ The Java Program follows can be executed from source by running
 This will execute the programs main function which will render the JavaFX Stage from the UI.fxml file and initialize the program's objects. Below shows an explanation of the code's logic.
 
 # Program Logic
------------------
+
 The program is structured with a variety of different objects and packages for ease of understanding. These objects are detailed below:
 
 ### The `Capture` Package
